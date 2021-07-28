@@ -46,43 +46,12 @@ int main(void)
 
 }
 
-/* Used to be true but found solution. Saving this as a comment just incase. See end of comment for solution
-// doesn't work if the long is less than 1
-int long_length(long n)
-{
-    long e = 10;
-    int len = 1;
-    while (n > e || n == e)
-    {
-        len++;
-        e = e * 10;
-    }
-    return len;
-}
 
-
-// smame as long length but for ints
-int int_length(int n)
-{
-    long e = 10;
-    int len = 1;
-    while (n > e || n == e)
-    {
-        len++;
-        e = e * 10;
-    }
-    return len;
-}
-
-*/
 // get digit length of long (number of digits really)
 int long_length(long n)
 {
-    // this brings to mind wether or not a - (negative) sign should be counted as a part of a length
-    // In python. Number data types cannot have lengths.
-    // When you convert an integer to a string, python does count the negative sign as a value of length. So len(str(7)) == 1 but len(str(-7)) == 2
-    // Granted my purpose is to count digits, so techinally not length.
-    // So I will ignore negative signs and only return digit length
+
+    // Will ignore negative signs and only return digit length
     if (n < 0)
     {
         n = n * -1;
