@@ -35,7 +35,7 @@ line50000 ="--50,000-- " + (" "*10) + (("|  --50,000-- " + (" "*12))*2)
 lineshere = [line5000, line10000, line50000]
 print(topline)
 for i in range(3):
-    print(lineshere[0])
+    print(lineshere[i])
     first = "1st: " + newl[i][0][0] + "  " + str(newl[i][0][1]).ljust(6,'0') + "s  |  " + "1st: " + str(newl[i+3][0][0]) + "  " + str(newl[i+3][0][1]).ljust(6,'0') + "s  |  " + "1st: " + str(newl[i+6][0][0]) + "  " + str(newl[i+6][0][1]).ljust(6,'0') + "s"
     second = "2nd: " + newl[i][1][0] + "  " + str(newl[i][1][1]).ljust(6,'0') + "s  |  " + "2nd: " + str(newl[i+3][1][0]) + "  " + str(newl[i+3][1][1]).ljust(6,'0') + "s  |  " + "2nd: " + str(newl[i+6][1][0]) + "  " + str(newl[i+6][1][1]).ljust(6,'0') + "s"
     third = "3rd: " + newl[i][2][0] + "  " + str(newl[i][2][1]).ljust(6,'0') + "s  |  " + "3rd: " + str(newl[i+3][2][0]) + "  " + str(newl[i+3][2][1]).ljust(6,'0') + "s  |  " + "3rd: " + str(newl[i+6][2][0]) + "  " + str(newl[i+6][2][1]).ljust(6,'0') + "s"
