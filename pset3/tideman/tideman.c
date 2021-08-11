@@ -129,13 +129,15 @@ bool vote(int rank, string name, int ranks[])
             for (int j = 0; j < rank; j++)
             {
                 // if name == candidate that has the index found at rank's index of j
+                // check if name has already been mentioned within the current vote
+                // if it has it will be found in rank. Rank however is a bunch of numbers and not a string so you've got to convert it properly
                 if (!strcmp(name, candidates[ranks[j]]))
                 {
                     // name is a repeat
                     return false;
                 }
             }
-            // update rank by setting name as it's index and putting that int into the proper
+            // update rank by setting name as its index and putting that int into the proper
             // location
             ranks[rank] = candex(name);
             return true;
